@@ -1,0 +1,177 @@
+$main-font: 'M PLUS Rounded 1c', sans-serif;
+
+body.modal-open {
+    overflow: hidden;
+}
+
+main {
+    h2 {
+        font-size: 5rem;
+        font-family: $main-font;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .century_main {
+        position: relative;
+        max-width: 90vw;
+        margin: 0 auto;
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        gap: 390px;
+
+        .left-column {
+            padding-left: 30px;
+        }
+
+        .left-column,
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 280px;
+
+                li {
+                    display: table;
+                    position: relative;
+                    width: 450px;
+                    height: 326px;
+                    list-style: none;
+                    background-color: #F8E09E;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 326px;
+
+                    p {
+                        vertical-align: middle;
+                        padding-top: 120px;
+
+                        a {
+                            font-size: 3rem;
+                            font-family: $main-font;
+                            line-height: 40px;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            color: #3f3f3f;
+                            text-decoration: none;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .right-column ul li {
+                margin-top: 300px;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 440px;
+                height: 100%;
+                background-image: url(../img/footprint.svg);
+                background-size: contain;
+                background-repeat: repeat-y;
+                vertical-align: middle;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+    height: 666px;
+    background-color: #717171;
+    border-radius: 50px;
+    z-index: 1000;
+
+    .modal-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #717171;
+        border-radius: 50px;
+        opacity: 0.72;
+        z-index: -1;
+    }
+
+    h3 {
+        font-size: 5rem;
+        font-family: $main-font;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 16px;
+        left: 40px;
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: none;
+        font-size: 50px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .tour_ex {
+        display: flex;
+        justify-content: center;
+        gap: 130px;
+
+        .tour_list {
+            position: relative;
+            width: 28vw;
+            height: 475px;
+            background-color: #fff;
+            border-radius: 30px;
+
+            p {
+                font-size: 2rem;
+                font-family: $main-font;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 40px;
+                line-height: 180%;
+            }
+
+            button {
+                width: 146px;
+                height: 52px;
+                font-size: 2rem;
+                font-weight: bold;
+                font-family: $main-font;
+                background-color: #F8E09E;
+                border-radius: 100px;
+                margin-top: 20px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

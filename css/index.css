@@ -1,0 +1,232 @@
+* {
+  font-size: 62.5%;
+}
+
+header {
+  width: 100%;
+  height: 145px;
+  background-color: #deaf2a;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo a {
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+}
+header .logo a img {
+  width: 110px;
+  height: 110px;
+  margin: 12px 0 0 34px;
+}
+header .logo a h1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: normal;
+  font-size: 4rem;
+  color: #fff;
+  line-height: 135px;
+}
+
+main h2 {
+  font-size: 5rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 55px;
+}
+main .mainvisual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 77px;
+}
+main .mainvisual img {
+  position: relative;
+  width: 90vw;
+  height: 490px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .mainvisual img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, rgba(108, 108, 108, 0.89) 38.22%, #3B3B3B 69.72%);
+}
+main .mainvisual .descText {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+}
+main .mainvisual .descText h2 {
+  font-size: 4rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+main .mainvisual .descText p {
+  font-size: 2rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: normal;
+  line-height: 180%;
+}
+main .category {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 46px;
+}
+main .category h2 {
+  font-size: 4rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+main .category ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+}
+main .category ul li a img {
+  width: 267px;
+  height: 166px;
+}
+main .about {
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .about h2 {
+  width: 445px;
+  height: 100px;
+  font-size: 4rem;
+  line-height: 100px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-color: #192F60;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+  align-self: flex-start;
+  margin-bottom: 45px;
+}
+main .about p {
+  width: 95vw;
+  max-width: 1200px;
+  font-size: 2.5rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: normal;
+  line-height: 180%;
+  text-align: left;
+}
+main .introduction {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 8vw;
+  margin-top: 130px;
+  position: relative;
+}
+main .introduction img {
+  width: 333px;
+  height: 100%;
+}
+main .introduction .text {
+  width: 55vw;
+  height: 514px;
+  background-color: #192F60;
+  border-radius: 52px 0 0 52px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .introduction .text p {
+  width: 85%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #fff;
+}
+main .introduction .text p:first-child {
+  font-size: 5rem;
+  font-weight: bold;
+}
+main .introduction .text p:nth-child(2) {
+  font-size: 5rem;
+}
+main .introduction .text p:nth-child(2) span {
+  font-size: 2.2rem;
+}
+main .introduction .text p:nth-child(3) {
+  font-size: 2.5rem;
+  line-height: 180%;
+}
+main .contact {
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contact h2 {
+  width: 400px;
+  height: 100px;
+  font-size: 4rem;
+  line-height: 100px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-color: #192F60;
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+  align-self: flex-start;
+  margin-bottom: 45px;
+}
+main .contact p {
+  font-size: 4.5rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-align: center;
+  line-height: 180%;
+}
+main .contact p span {
+  font-size: 3rem;
+}
+
+footer {
+  width: 100%;
+  height: 136px;
+  background-color: #83282D;
+  border-radius: 20px 20px 0 0;
+  margin-top: 140px;
+  display: flex;
+  justify-content: left;
+  gap: 30px;
+  padding-left: 70px;
+}
+footer p {
+  font-size: 5rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  line-height: 136px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+  padding-top: 60px;
+}
+footer ul li a {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */
